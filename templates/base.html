@@ -4,15 +4,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!--Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Google Font Rubik-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <!--For Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Native CSS link-->
     <link rel="stylesheet" href={% static "style.css" %}>
+
     <title>Stotra Revisit</title>
+
 </head>
-<body>
-    <!--navbar-->
+<body class="">
+    <div class="nav-section">
+        <header>
+            <nav class="place-items-center flex">
+                <!--Navbar & Logo-->
+                <div>
+                    <a href="" class="flex">
+                        <img class="logo" src="{% static 'logo.png' %}" alt=""/>
+                        <span class="logo-name">Stotra Ratnavali</span>
+                    </a>
+                </div>
 
+                <!--Nav Links-->
+                <div class="nav-links text-xl">
+                    <ul class="">
+                        <li><a href="">Shiva Stotra</a></li>
+                        <li><a href="">Shakti Stotra</a></li>
+                        <li><a href="">Vishnu Stotra</a></li>
+                        <li><a href="">Krishna Stotra</a></li>
+                        <li>
+                            <div class="dropdown mt-6 style=" style=" padding: 10px; border-radius: 12px;
+                            background-color:#ff6b6b;margin-left:32px;">
+                                <button class="text-lg">Explore More
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
 
-    <nav>
+                                <div class="dropdown-content">
+                                    <a href="#">Blogs</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
 
-    </nav>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
 </body>
 </html>
