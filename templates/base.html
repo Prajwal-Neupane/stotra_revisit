@@ -12,51 +12,147 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <!--For Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <!--Native CSS link-->
     <link rel="stylesheet" href={% static "style.css" %}>
+
+    <!--Javascript-->
+    <script src="{% static 'script.js' %}" defer></script>
 
     <title>Stotra Revisit</title>
 
 </head>
-<body class="">
-    <div class="nav-section">
-        <header>
-            <nav class="place-items-center flex">
-                <!--Navbar & Logo-->
-                <div>
-                    <a href="" class="flex">
-                        <img class="logo" src="{% static 'logo.png' %}" alt=""/>
-                        <span class="logo-name">Stotra Ratnavali</span>
-                    </a>
-                </div>
+<body class="bg-orange-200">
+<!--Navbar-->
+<div class="nav-section bg-orange-200">
+    <header>
+        <nav class="place-items-center flex">
+            <!--Navbar & Logo-->
+            <div>
+                <a href="" class="flex">
+                    <img class="logo" src="{% static 'logo.png' %}" alt=""/>
+                    <span class="logo-name">Stotra Ratnavali</span>
+                </a>
+            </div>
 
-                <!--Nav Links-->
-                <div class="nav-links text-xl">
-                    <ul class="">
-                        <li><a href="">Shiva Stotra</a></li>
-                        <li><a href="">Shakti Stotra</a></li>
-                        <li><a href="">Vishnu Stotra</a></li>
-                        <li><a href="">Krishna Stotra</a></li>
-                        <li>
-                            <div class="dropdown mt-6 style=" style=" padding: 10px; border-radius: 12px;
-                            background-color:#ff6b6b;margin-left:32px;">
-                                <button class="text-lg">Explore More
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
+            <!--Nav Links-->
+            <div class="nav-links text-xl">
+                <ul class="">
+                    <li><a href="">Shiva Stotra</a></li>
+                    <li><a href="">Shakti Stotra</a></li>
+                    <li><a href="">Vishnu Stotra</a></li>
+                    <li><a href="">Krishna Stotra</a></li>
+                    <li>
+                        <div class="dropdown mt-6 style=" style=" padding: 10px; border-radius: 12px;
+                        background-color:#ff6b6b;margin-left:32px;">
+                            <button class="text-lg">Explore More
+                                <i class="fa fa-caret-down"></i>
+                            </button>
 
-                                <div class="dropdown-content">
-                                    <a href="#">Blogs</a>
-                                    <a href="#">Link 2</a>
-                                    <a href="#">Link 3</a>
-                                </div>
+                            <div class="dropdown-content">
+                                <a href="#">Blogs</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
                             </div>
+                        </div>
 
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+</div>
+
+{% block content %}
+
+{% endblock %}
+
+<!--Footer-->
+<footer>
+    <div class="footer-cards">
+        <div class="footer-card-title">
+            <a href=""><h1>Stotra Ratnavali</h1></a>
+        </div>
+
+        <div class="first-footer-card-description">
+            <p>Here you can use rows and columns to organize your footer content.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
     </div>
+
+    <div class="footer-cards">
+        <div class="footer-card-title">
+            <h1>Shortcuts</h1>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">Madhurashtakam</a>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">Madhurashtakam</a>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">Madhurashtakam</a>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">Madhurashtakam</a>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">Madhurashtakam</a>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">Madhurashtakam</a>
+        </div>
+    </div>
+
+    <div class="footer-cards">
+        <div class="footer-card-title">
+            <h1>Useful Links</h1>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">About Us</a>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">Join Our Team</a>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">Privacy Policy</a>
+        </div>
+
+        <div class="footer-card-link">
+            <a href="">Give us feedback</a>
+        </div>
+
+
+    </div>
+
+    <div class="footer-cards">
+        <div class="footer-card-title">
+            <h1>Contact Us</h1>
+        </div>
+
+        <div class="fourth-footer-card-title">
+            <div class="fourth-footer-card-first-element">
+                <i class="fa-solid fa-house"></i>
+                <p>Bhadrapur, Jhapa, Nepal</p>
+            </div>
+        </div>
+            <div class="fourth-footer-card-second-element">
+                <i class="fa-sharp fa-solid fa-envelope"></i>
+                <a href="mailto:choudharysaurav214@gmail.com" class="text-lg ml-2">choudharysaurav214@gmail.com</a>
+            </div>
+    </div>
+    <div class="footer-end">
+        <p>© 2023 Copyright <a href="">https://stotra.in</a></p>
+    </div>
+</footer>
 </body>
 </html>
